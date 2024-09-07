@@ -18,6 +18,7 @@ public class main {
         cs.get('D');
         cs.get('C');
         cs.displayCache();
+        cs.removeCacheLevel(1);
 
 
         //Display all available data with its keys below
