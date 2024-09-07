@@ -6,17 +6,32 @@ public class main {
         CacheSystem cs = new CacheSystem();
         cs.addCacheLevel(3,"Normal");
         cs.addCacheLevel(2,"LRU");
+        cs.addCacheLevel(3,"Normal");
+        cs.addCacheLevel(2,"LRU");
 
         cs.put('A',21);
         cs.put('B',22);
         cs.put('C',222);
-        cs.put('S',2);
-        cs.put('Z',2);
-        cs.put('X',2);
+        cs.put('D',222);
+
         cs.get('A');
-
-
+        cs.get('D');
+        cs.get('C');
         cs.displayCache();
+
+
+        //Display all available data with its keys below
+        DisplayKeyValue();
+    }
+
+
+    static void DisplayKeyValue(){
+        System.out.println("============================================");
+        for (Map.Entry<Character, Integer> entry : mp.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+        System.out.println("============================================");
+
     }
 
 }

@@ -65,7 +65,11 @@ public class CacheSystem {
 
     void displayCache(){
         for (int i=0;i<ls.size();i++){
-            System.out.println("L"+(i+1)+": "+ls.get(i).print());
+            if(ls.get(i) instanceof Cache){
+                System.out.println("L"+(i+1)+": "+ls.get(i).print()+"-->Is a cache");
+            }else{
+                System.out.println("L"+(i+1)+": "+ls.get(i).print()+"-->LRU feature ");
+            }
         }
     }
 

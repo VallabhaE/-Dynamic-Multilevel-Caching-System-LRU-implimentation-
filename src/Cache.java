@@ -14,10 +14,15 @@ public class Cache implements CacheLevel{
     }
     @Override
     public boolean put(char key, int value) {
+        if(cache.contains(key)) {
+            System.out.println("Value Already Exist in cache memory");
+            return false;
+        }
         if (size ==0) {
             System.out.println("Cache Has Been Filled");
             return false;
         }
+
         main.mp.put(key,value);
         cache.add(key);
         size--;

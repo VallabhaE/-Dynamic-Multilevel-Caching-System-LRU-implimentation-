@@ -1,4 +1,5 @@
 import java.util.LinkedList;
+import java.util.Objects;
 import java.util.Queue;
 
 public class LRU implements CacheLevel {
@@ -18,8 +19,8 @@ public class LRU implements CacheLevel {
         return true;
     }
 
-    public String print(){
-        return LRU.toString();
+    public String print() {
+       return LRU.toString();
     }
     @Override
     public boolean put(char key,int value){
