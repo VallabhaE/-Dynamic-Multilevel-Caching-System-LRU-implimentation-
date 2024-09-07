@@ -12,11 +12,14 @@ Since I implemented LRU, my understanding is that both a normal cache and an LRU
 
 Sample Code and Output: (I will try to update this README file to make it more readable in the coming days.)
 //code
+
+
         CacheSystem cs = new CacheSystem();
         cs.addCacheLevel(3,"Normal");
         cs.addCacheLevel(2,"LRU");
         cs.addCacheLevel(3,"Normal");
         cs.addCacheLevel(2,"LRU");
+        
         cs.put('A',21);
         cs.put('B',22);
         cs.put('C',222);
@@ -26,6 +29,8 @@ Sample Code and Output: (I will try to update this README file to make it more r
         cs.get('C');
         cs.displayCache();
         cs.removeCacheLevel(1);
+
+        
 //output
 Cache Has Been Filled
 No Chaches Available for you to put,Please Add More Chaches or visit feature calls LRU which has been implimeted
