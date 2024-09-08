@@ -25,6 +25,7 @@ public class LRU implements CacheLevel {
     @Override
     public boolean put(char key,int value){
         if(this.LRU.size() == this.size) return false;
+
         main.mp.put(key,value);
         LRU.add(key);
         return true;
@@ -35,6 +36,7 @@ public class LRU implements CacheLevel {
             System.out.println("Key is not inserted");
             return false;
         }
+
         return LRU.contains(key);
     }
     synchronized void remove(){

@@ -7,16 +7,19 @@ public class main {
         cs.addCacheLevel(3,"Normal");
         cs.addCacheLevel(2,"LRU");
         cs.addCacheLevel(3,"Normal");
+        cs.addCacheLevel(2,"LRU");
 
         cs.put('A',21);
         cs.put('B',22);
         cs.put('C',222);
         cs.put('D',222);
+        cs.put('E',222);
 
         cs.get('A');
         cs.get('D');
         cs.get('C');
         cs.get('A');
+        cs.get('E');
         cs.displayCache();
         cs.removeCacheLevel(1);
 

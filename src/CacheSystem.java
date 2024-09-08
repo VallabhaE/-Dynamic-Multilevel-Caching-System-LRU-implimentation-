@@ -31,6 +31,7 @@ public class CacheSystem {
         if(!removedFromCache){
             for (CacheLevel c : ls){
                 if (c instanceof LRU){
+                    if (((LRU) c).get(key)) break;
                     if (c.put(key,main.mp.get(key))){
                         removedFromCache = true;
                         break;
