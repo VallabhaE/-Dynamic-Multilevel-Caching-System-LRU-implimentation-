@@ -11,6 +11,10 @@ Code Design:
 Since I implemented LRU, my understanding is that both a normal cache and an LRU cache can be created according to the user's requirements for size. When a user uses the put method, all the data will be moved to all available caches. If a user tries to access any character, it will be moved to the LRU feature, which I have implemented. The code is designed in a way that it can be extended to include LFU as well, given that an interface is used.
 
 Sample Code and Output: (I will try to update this README file to make it more readable in the coming days.)
+NOTE := the input and output may not be accurate sinice i am continuesly updating, please clone and give it a try and my code can be customisable according to your need please contact me through mail
+        eashwarvallabha180@gmail.com
+if you have time please visit my portfolio
+        [eswar](https://eswarprotfolio.onrende.com/)
 //code
 
 
