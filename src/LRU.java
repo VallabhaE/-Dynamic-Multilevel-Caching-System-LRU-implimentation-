@@ -13,11 +13,11 @@ public class LRU implements CacheLevel {
     public int getSize(){
         return size;
     }
-    boolean AddLRU(int val){
-
-        LRU.add(val);
-        return true;
-    }
+//    boolean AddLRU(int val){
+//
+//        LRU.add(val);
+//        return true;
+//    }
 
     public String print() {
        return LRU.toString();
@@ -37,6 +37,8 @@ public class LRU implements CacheLevel {
         }
         return LRU.contains(key);
     }
+
+
 
 
 }
