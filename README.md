@@ -35,12 +35,21 @@ Sample Code and Output: (I will try to update this README file to make it more r
 
 
     Cache Has Been Filled
-    No Chaches Available for you to put,Please Add More Chaches or visit feature calls LRU which has been implimeted
-    L1: [B]-->Is a cache
-    L2: [A, D]-->LRU feature 
-    L3: []-->Is a cache
-    L4: [C]-->LRU feature 
-    Cant be removed size data Available
+        No Chaches Available for you to put,Please Add More Chaches or visit feature calls LRU which has been implimeted
+        Cache Has Been Filled
+        No Chaches Available for you to put,Please Add More Chaches or visit feature calls LRU which has been implimeted
+        L2: [A, E]-->LRU feature 
+        Cache has been removed
+
+        Total Available Cache data can be added/removed
+        ============================================
+        A: 21
+        B: 22
+        C: 222
+        D: 222
+        E: 222
+        ============================================
+
 
 
 
