@@ -4,7 +4,7 @@ Question: Which feature has been implemented, LRU or LFU?
 
 Answer: I chose LRU.
 
-Explanation: My understanding is that if a user tries to access a character or string, it should be moved to the newly added feature (LRU).
+Explanation: My understanding is that if a user tries to access a character or string, it should be shown to the newly added feature (LRU).
 
 Code Design:
 
