@@ -37,7 +37,9 @@ public class LRU implements CacheLevel {
         }
         return LRU.contains(key);
     }
-
+    synchronized void remove(){
+         LRU.poll();
+    }
 
 
 

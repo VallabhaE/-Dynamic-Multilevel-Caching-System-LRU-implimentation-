@@ -19,7 +19,7 @@ public class CacheSystem {
             return;
         }
         //Remove from Cache
-        boolean removedFromCache = true;
+        boolean removedFromCache = false;
 //        for (CacheLevel c : ls){
 //            if (c instanceof Cache){
 //                if( ((Cache) c).get(key)){
@@ -28,12 +28,22 @@ public class CacheSystem {
 //                }
 //            }
 //        }
-        if(removedFromCache){
+        if(!removedFromCache){
             for (CacheLevel c : ls){
                 if (c instanceof LRU){
                     if (c.put(key,main.mp.get(key))){
+                        removedFromCache = true;
                         break;
                     }
+                }
+            }
+        }
+        if(!removedFromCache){
+            for(int i = 0;i<ls.size()-1;i++){
+                if(ls.get(i) instanceof LRU){
+                    ((LRU) ls.get(i)).remove();
+                    ls.get(i).put(key,main.mp.get(key));
+                    break;
                 }
             }
         }

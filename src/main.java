@@ -16,6 +16,7 @@ public class main {
         cs.get('A');
         cs.get('D');
         cs.get('C');
+        cs.get('A');
         cs.displayCache();
         cs.removeCacheLevel(1);
 
